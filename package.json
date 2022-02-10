@@ -21,9 +21,8 @@
     "build": "vite build && tsc -p ./tsconfig.dist.json -emitDeclarationOnly && tsc-alias -p ./tsconfig.dist.json"
   },
   "keywords": [
-    "clipboard",
-    "google-sheet",
-    "table"
+    "gifs",
+    "tenor"
   ],
   "author": "carl-jin",
   "license": "MIT",
