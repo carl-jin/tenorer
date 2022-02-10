@@ -1,0 +1,210 @@
+@border-color: #313131;
+@text-color: rgb(138, 141, 145);
+
+.tenorer-container {
+  background: rgb(31, 31, 31);
+  border: 1px solid @border-color;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 894px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: "SF Regular", "Segoe System UI Regular", "Segoe UI Regular",
+    sans-serif;
+
+  .tenorer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+
+  .tenorer-content-top {
+    width: 100%;
+  }
+
+  .tenorer-review-box {
+    flex-shrink: 0;
+    padding: 12px 8px;
+    border-right: 1px solid @border-color;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .tenorer-review {
+      &::after {
+        display: inline-block;
+        width: 100%;
+        content: "Found on Tenor.com";
+        font-size: 10px;
+        color: @text-color;
+        text-align: center;
+        transform: translateY(-4px);
+      }
+    }
+    width: 140px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .tenorer-search-box {
+    border-bottom: 1px solid @border-color;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    input {
+      background: transparent;
+      height: 30px;
+      width: 420px;
+      border: 1px solid @border-color;
+      border-radius: 4px;
+      outline: none;
+      color: #fafafa;
+      text-indent: 32px;
+      &::-webkit-search-decoration,
+      &::-webkit-search-cancel-button,
+      &::-webkit-search-results-button,
+      &::-webkit-search-results-decoration {
+        display: none;
+      }
+    }
+
+    .tenoer-search-wrap {
+      position: relative;
+      position: relative;
+      .tenorer-icon {
+        outline: none;
+        padding: 0;
+        background: transparent;
+        border: none;
+        color: @text-color;
+        position: absolute;
+        top: 8px;
+        cursor: pointer;
+        &:hover {
+          color: #fff;
+        }
+      }
+      .tenorer-search-icon {
+        top: 6px;
+        left: 12px;
+      }
+      .tenorer-search-close {
+        right: 12px;
+        &.hidden {
+          display: none;
+        }
+      }
+    }
+
+    .tenorer-logo {
+      display: inline-block;
+      margin-right: 8px;
+      opacity: 0.6;
+      margin-top: 6px;
+      width: 140px;
+      height: 18px;
+      background-image: url(https://www.gstatic.com/tenor/web/attribution/PB_tenor_logo_white_horizontal.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      text-indent: 9999px;
+      overflow: hidden;
+    }
+  }
+
+  .tenorer-gifs-list {
+    height: 160px;
+    overflow: visible;
+    overflow-x: hidden;
+    margin-right: 4px;
+    padding: 8px;
+
+    &::-webkit-scrollbar {
+      width: 8px;
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #747474;
+      -webkit-border-radius: 1ex;
+    }
+
+    &::-webkit-scrollbar-corner {
+      background: #000;
+    }
+
+    .tenorer-type-title {
+      color: @text-color;
+      font-size: 12px;
+      margin: 0;
+      margin-bottom: 8px;
+    }
+
+    .loading {
+      color: @text-color;
+      display: block;
+      text-align: center;
+      width: 100%;
+      padding-top: 50px;
+    }
+  }
+
+  .tenorer-gifs-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-left: -4px;
+    margin-right: -4px;
+    margin-bottom: -8px;
+  }
+
+  .tenorer-image-item {
+    width: 94px;
+    height: 94px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    margin: 0 4px;
+    margin-bottom: 8px;
+    border: none;
+    outline: none;
+    padding: 0;
+    background-color: transparent;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &:hover {
+      box-shadow: rgba(0, 120, 212, 1) 0 0 0 2px;
+    }
+  }
+
+  .tenorer-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+    padding-bottom: 0;
+    margin-left: -4px;
+    button {
+      margin: 0 4px;
+      padding: 0;
+      outline: none;
+      background: transparent;
+      border: none;
+      color: @text-color;
+      cursor: pointer;
+      &:hover,
+      &.active {
+        color: #568bf6;
+      }
+    }
+  }
+}

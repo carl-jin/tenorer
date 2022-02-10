@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tenorer</title>
+    <script src="./example/index.ts" type="module"></script>
+    <style>
+      * {
+        padding: 0;
+
+        margin: 0;
+
+        font-family: "SF Regular", "Segoe System UI Regular", "Segoe UI Regular",
+          sans-serif;
+      }
+      .dark-container {
+        background: #000;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .dark-container .title {
+        color: #999;
+        font-size: 32px;
+        margin-bottom: 24px;
+      }
+
+      .light-container {
+        background: #fff;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .light-container .title {
+        color: #333;
+        font-size: 32px;
+        margin-bottom: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dark-container">
+      <span class="title">Dark Theme</span>
+      <div id="box"></div>
+    </div>
+
+    <div class="light-container">
+      <span class="title">Light Theme</span>
+      <div id="box2"></div>
+    </div>
+  </body>
+</html>
