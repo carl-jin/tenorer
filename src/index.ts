@@ -282,7 +282,7 @@ export class Tenorer extends BaseEvent<TenorEvent> {
     let imagesHtml = ``;
 
     items.map((item) => {
-      if (item.media[0].gif) {
+      if (item.media[0].gif && item.media[0]?.mp4) {
         imagesHtml += gen_image_item({
           preview: item.media[0].gif.preview,
           url: item.media[0].gif.url,
@@ -291,7 +291,10 @@ export class Tenorer extends BaseEvent<TenorEvent> {
           height: item.media[0].gif.dims[1],
           title: item.content_description,
           id: item.id,
-          duration: item.media[0]?.mp4?.duration ?? 2,
+          duration: item.media[0].mp4.duration ?? 2,
+          mp4Vid: item.media[0].mp4.url,
+          mp4VidWidth: item.media[0].mp4.dims[0],
+          mp4VidHeight: item.media[0].mp4.dims[1],
         });
       }
     });

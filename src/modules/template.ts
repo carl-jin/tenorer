@@ -19,7 +19,10 @@ export type GifObj = {
   title: string;
   previewGif: string;
   id: string;
-  duration:number
+  duration: number;
+  mp4Vid: string;
+  mp4VidWidth: number;
+  mp4VidHeight: number;
 };
 
 export type FooterIconsName = typeof footerIcons[number];

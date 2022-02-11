@@ -15,6 +15,8 @@ export type TenorMedia = {
   };
   mp4: {
     duration: number;
+    url: string;
+    dims: [number, number];
   };
 };
 
