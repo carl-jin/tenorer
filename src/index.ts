@@ -237,9 +237,6 @@ export class Tenorer extends BaseEvent<TenorEvent> {
       "click",
       (e: any) => {
         let el = e.delegateTarget;
-        let id = el.dataset.id as string;
-        if (id === currentHoverId) return;
-        currentHoverId = id;
 
         let scriptTag = el.querySelector("script");
         let imgObj = JSON.parse(scriptTag.text.trim()) as GifObj;

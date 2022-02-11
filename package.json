@@ -1,6 +1,6 @@
 {
   "name": "tenorer",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "a simple gifs searching panel and power by Tenor",
   "main": "./dist/tenorer.umd.js",
   "module": "./dist/tenorer.es.js",
@@ -17,7 +17,7 @@
     "url": "https://github.com/carl-jin/tenorer/issues"
   },
   "scripts": {
-    "serve": "vite --host",
+    "serve": "vite --port 3001 --host",
     "build": "vite build && tsc -p ./tsconfig.dist.json -emitDeclarationOnly && tsc-alias -p ./tsconfig.dist.json"
   },
   "keywords": [
